@@ -1,35 +1,30 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        tensai_portfolio
-      </h1>
-      <h2 class="subtitle">
-        My mathematical Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
+  <div class="columns">
+  <div class="column">
+    <Card :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'" />
+  </div>
+  <div class="column">
+     <Card :imageurl="'https://pbs.twimg.com/media/D9P-UR5UEAEUZiB.png'" />
+  </div>
+  <div class="column">
+     <Card />
+  </div>
+  <div class="column">
+     <Card />
+  </div>
+</div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Card
   }
 }
 </script>
