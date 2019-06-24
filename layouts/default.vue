@@ -43,11 +43,6 @@
     
   </div>
 </nav>
-<h1>3Dworks</h1>
-    <nuxt />
-<h1>Sketches</h1>
-    <nuxt />
-<h1>Photo Diary</h1>
     <nuxt />
   </div>
 </template>
