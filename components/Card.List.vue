@@ -5,17 +5,17 @@
     <div class="columns is-multiline is-variable is-4" >
 
    <div class="column is-one-third-desktop">
-    <Card :title="'ggggg'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'" 
+    <Card :title="'aaaaa'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'" 
     :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'"/>
    </div>
 
    <div class="column is-one-third-desktop">
-     <Card :title="'aaaaaa'" :imageurl="'https://pbs.twimg.com/media/D9P-UR5UEAEUZiB.png'" 
+     <Card :title="'bbbbb'" :imageurl="'https://pbs.twimg.com/media/D9P-UR5UEAEUZiB.png'" 
      :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'"/>
      </div>
   
    <div class="column is-one-third-desktop">
-    <Card :title="'ggggg'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'"
+    <Card :title="'cccccc'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'"
     :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'" />
    </div>
    

@@ -11,6 +11,7 @@
 import Logo from '~/components/Logo.vue'
 import CardList from '~/components/Card.List.vue'
 
+
 export default {
   components: {
     Logo,

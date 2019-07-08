@@ -19,33 +19,48 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <nuxt-link :to="'/'"class="navbar-item">
         TOP
-      </a>
-      <a class="navbar-item">
+      </nuxt-link>
+
+      <nuxt-link :to="'3dworks'" class="navbar-item">
         3Dworks
-      </a>
-      <a class="navbar-item">
+      </nuxt-link>
+      <nuxt-link :to="'sketches'" class="navbar-item">
         Sketches
-      </a>
+      </nuxt-link>
 
-      <a class="navbar-item">
+      <nuxt-link :to="'photodiary'" class="navbar-item">
         PhotoDiary
-      </a>
+      </nuxt-link>
 
-      <a class="navbar-item">
+      <nuxt-link :to="'aboutme'" class="navbar-item">
         About Me
-      </a>
+      </nuxt-link>
 
      </div>
    
 
     
   </div>
-</nav>
+    </nav>
     <nuxt />
+    <Footer />
   </div>
+  
 </template>
+
+<script>
+import Footer from '~/components/Footer.vue'
+
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
+
+
 
 <style>
 h1{
