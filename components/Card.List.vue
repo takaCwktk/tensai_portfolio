@@ -3,7 +3,7 @@
     <h1>{{category}}</h1>  
   <div class="container">
     <div class="columns is-multiline is-variable is-4" >
-
+<!-- 
    <div class="column is-one-third-desktop">
     <Card :title="'aaaaa'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'" 
     :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'"/>
@@ -12,11 +12,11 @@
    <div class="column is-one-third-desktop">
      <Card :title="'bbbbb'" :imageurl="'https://pbs.twimg.com/media/D9P-UR5UEAEUZiB.png'" 
      :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'"/>
-     </div>
+     </div> -->
   
-   <div class="column is-one-third-desktop">
-    <Card :title="'cccccc'" :imageurl="'https://pbs.twimg.com/media/D9QDO_qUcAEsDok.jpg'"
-    :main="'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'" />
+   <div class="column is-one-third-desktop" v-for="post in posts" :key="post.id">
+    <Card :title="post.content.name" :imageurl="post.content.images"
+    :main="post.content.content" />
    </div>
    
         </div>
@@ -29,7 +29,7 @@ import Logo from '~/components/Logo.vue'
 import Card from '~/components/Card.vue'
 
 export default {
-    props: ['category'],
+    props: ['category', 'posts'],
   components: {
     Logo,
     Card
