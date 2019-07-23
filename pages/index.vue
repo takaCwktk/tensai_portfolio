@@ -2,7 +2,7 @@
   <div>
     <CardList :category="'3Dworks'" :posts="posts.filter((post) => post.content.component === '3dwork').slice(0,3)" />
     <CardList :category="'Sketches'" :posts="posts.filter((post) => post.content.component === 'sketch').slice(0,3)" />
-    <CardList :category="'PhotoDiary'" :posts="posts.filter((post) => post.content.component === 'photodiary').slice(0,3)" />
+    <CardList :category="'PhotoDiaries'" :posts="posts.filter((post) => post.content.component === 'photodiary').slice(0,3)" />
   </div>
 
 </template>
@@ -18,8 +18,8 @@ export default {
   async asyncData (context) {
     const { data } = await context.app.$axios.get(`https://api.storyblok.com/v1/cdn/stories`, {
       params: {
-        token: 'Z3wB1rsLPBLMjjRBlEgAcgtt',
-        cv: "CURRENT_TIMESTAMP"
+        token: 'Ssm4K0OYn8WM6jQEe09Wygtt',
+        cv: ""
       }
     })
 

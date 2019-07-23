@@ -14,7 +14,7 @@ export default {
   async asyncData (context) {
     const { data } = await context.app.$axios.get(`https://api.storyblok.com/v1/cdn/stories`, {
       params: {
-        token: 'Z3wB1rsLPBLMjjRBlEgAcgtt',
+        token: 'Ssm4K0OYn8WM6jQEe09Wygtt',
         starts_with: 'sketches',
         cv: "CURRENT_TIMESTAMP"
       }
