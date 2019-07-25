@@ -14,7 +14,7 @@ export default {
   async asyncData (context) {
     const { data } = await context.app.$axios.get(`https://api.storyblok.com/v1/cdn/stories`, {
       params: {
-        token: 'Ssm4K0OYn8WM6jQEe09Wygtt',
+        token: 'Am9M3mQT9L2ftXwZwyRD7Att',
         starts_with: '3dworks',
         cv: ""
       }
